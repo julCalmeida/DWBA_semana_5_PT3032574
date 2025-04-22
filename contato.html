@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" /> <!-- configura a codificação de caracteres do navegador para o UTF-8-->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> <!-- Adiciona o ícone de aba de navegador-->
+        <title>CONTATO - IFSP-PTB - DWBA4</title> <!-- Adiciona o título na aba do navegador-->
+    </head>
+
+    <body>
+        <header id="cabecalho"> <!-- Indica o cabeçalho do nosso documento-->
+            <nav> 
+                <iframe src="menu.html" width="100%" height="25%" style="border: 0;" scrolling="no"></iframe> <!--Traz o html menu como parte da página-->
+            </nav>
+        </header>
+
+        <main>
+            <h1>Mande uma mensagem</h1>
+            <form>
+                <ul>
+                    <li> 
+                        <label for="nome">Nome </label>
+                        <input type="text" id="nome" name="nome" required>
+                    </li>
+                    <li>
+                        <label for="email">E-mail </label>
+                        <input type="email" id="email" name="email" required>
+                    </li>
+                    <li>
+                        <label for="telefone">Telefone </label>
+                        <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\)\s?\d{5}-\d{4}" required> (99) 99999-9999
+                    </li>
+                    <li>
+                        <label for="assunto">Assunto </label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="" disabled selected>-- Selecione --</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="sugestao">Sugestão</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="mensagem">Mensagem </label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </li>
+                    <li>
+                        <fieldset>
+                            <legend>Opções de Resposta</legend>
+                                <label for="respEmail">E-mail </label>
+                                <input type="radio" id="email" value="email" name="opcoesResp" required>
+                                <label for="respTel">Telefone </label>
+                                <input type="radio" id="tel" value="tel" name="opcoesResp" required>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <button type="submit">Enviar</button>
+                    </li>
+                </ul>
+            </form>
+        </main>
+
+        <footer>
+            <br/><br/>
+            <div class="rodape" align="left">
+                <a href='https://www.facebook.com/ifsppirituba' target='_blank'><img src='images/facebook.png' width='40px' alt='IFSP Facebook' title="IFSP Facebook"></a>
+            
+            </div>
+                <p> IFSP - Câmpus Pirituba - AV. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>         
+        </footer>
+    </body>
+</html>
