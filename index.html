@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" /> <!-- configura a codificação de caracteres do navegador para o UTF-8-->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />  <!-- Adiciona o ícone de aba de navegador-->
+        <title> HOME - IFSP-PTB - DWBA4 </title> <!-- Adiciona o título na aba do navegador-->
+    </head>
+
+    <body>
+        <header id="cabecalho"> <!-- Indica o cabeçalho do nosso documento-->
+            <nav> 
+                <iframe src="menu.html" width="100%" height="25%" style="border: 0;" scrolling="no"></iframe> <!--Traz o html menu como parte da página-->
+            </nav>
+
+            <!-- Lista de cursos -->
+            <div class="cursos">
+                <nav> <!-- Indica que o conteúdo é composto de links de navegação-->
+                    <h3>Cursos</h3>
+                    <ul> <!-- Estrutura de lista não ordenada -->
+                        <li> <a href="ads.html"> Análise e Desenvolvimento de Sistemas </a> </li> <!-- Item de lista -->
+                        <li> <a href="#"> Engenharia de Produção </a> </li>
+                        <li> <a href="#"> Gestão em Tecnologia da Informação </a> </li>
+                        <li> <a href="#"> Letras </a> </li>
+                        <li> <a href="#"> Gestão Pública </a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main> <!-- indica que é o conteúdo principal dessa página -->
+        
+        <!-- Eventos -->
+        <aside> <!-- indica que é um conteúdo a parte do princial, auxiliar-->
+            <div class="eventos">
+                <h3>Eventos</h3>
+                <figure>
+                    <img src="images/SEJA_RARO.jpg" alt="Palestra Seja Raro" title="Palestra Seja Raro" width="50%" height="50%" />
+                    <figcaption>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</figcaption>
+                </figure>
+            </div>
+        </aside>
+
+        <!-- Biblioteca -->
+        <section>
+            <div class="biblioteca"> 
+                <h1> Sobre a Biblioteca </h1>
+                <article> <!-- Indica que o conteúdo é completo, ou seja, não depende de outros trechos do documento para ter significado -->
+                    <img src='images/library.jpeg' alt="Biblioteca" title="Biblioteca"/> <br />
+
+                    <h2> Conheça os novos títulos disponíveis na nossa biblioteca </h2>
+                    <h6> Publicado: Quarta-feira, 14 de agosto de 2019 </h6> <!-- Título de terceiro nível -->
+                </article>
+            </div>
+        </section>
+
+        <!-- SUAP -->
+        <section>
+            <div class="suap">
+                <h2>Conheça o SUAP</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> 
+        </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            <br/><br/>
+            <a href='#cabecalho'><img src='images/MoveTop.png' width='40px' alt='Mover para o topo' title="Mover para o topo"></a>
+            <nav>
+                <object width="100%" data="rodape.html"></object>
+            </nav>          
+        </footer>
+    </body>
+</html>
