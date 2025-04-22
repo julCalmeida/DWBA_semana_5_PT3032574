@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" /> <!-- configura a codificação de caracteres do navegador para o UTF-8-->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> <!-- Adiciona o ícone de aba de navegador-->
+        <title>EVENTOS - IFSP-PTB - DWBA4</title> <!-- Adiciona o título na aba do navegador-->
+    </head>
+
+    <body>
+        <header id="cabecalho"> <!-- Indica o cabeçalho do nosso documento-->
+            <nav> 
+                <iframe src="menu.html" width="100%" height="25%" style="border: 0;" scrolling="no"></iframe> <!--Traz o html menu como parte da página-->
+            </nav>
+        </header>
+
+        <main>
+            <h1>Inscreva-se</h1>
+            <form>
+                <fieldset>
+                    <label for="evento">Evento </label> 
+                    <select id="evento" name="evento" required>
+                        <option value="" disabled selected>-- Selecione --</option> <!--Opção neutra do select-->
+                        <option value="voeSemAsas">Voe sem asas</option>
+                        <option value="festaJunina">Festa junina</option>
+                        <option value="semTech">Semana de tecnologia</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações de Acesso</legend>
+                    <label for="usuario">Usuário </label>
+                    <input type="text" name="usuario" id="usuario" required><br><br>
+                    <label for="senha">Senha </label>
+                    <input type="password" name="senha" id="senha" required><br><br>
+                    <label for="confirmacao">Confirme a Senha </label>
+                    <input type="password" name="confirmacao" id="confirmacao" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label for="nomeCompleto">Nome Completo </label>
+                    <input type="text" name="nomeCompleto" id="nomeCompleto" required><br><br>
+                    <label for="email">E-mail </label>
+                    <input type="email" name="email" id="email" required><br><br>
+                    <label for="celular">Celular </label>
+                    <input type="tel" name="celular" id="celular" pattern="\(\d{2}\)\s?\d{5}-\d{4}" required> (99) 99999-9999<br><br>
+
+                    <fieldset>
+                        <legend>Sexo</legend>
+                        <label for="masc">Masculino </label>
+                        <input type="radio" id="masc" value="M" name="sexo" required>
+                        <label for="fem">Feminino </label>
+                        <input type="radio" id="fem" value="F" name="sexo" required>
+                    </fieldset><br>
+                    
+                    <label for="nascimento">Data de Nascimento </label>
+                    <input type="date" id="nascimento" name="nascimento" required><br><br>
+                    <label for="corFav">Cor Favorita </label>
+                    <input type="color" id="corFav" name="corFav" required><br><br>
+                    <label for="perfilGithub">Perfil no Github </label>
+                    <input type="text" id="perfilGithub" name="perfilGithub" required><br><br>
+                </fieldset><br>
+
+                <button type="submit">Inscrever</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </main>
+
+        <footer>
+            <br/><br/>
+            <div class="rodape" align="left">
+                <a href='https://www.facebook.com/ifsppirituba' target='_blank'><img src='images/facebook.png' width='40px' alt='IFSP Facebook' title="IFSP Facebook"></a>
+            
+            </div>
+                <p> IFSP - Câmpus Pirituba - AV. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>        
+        </footer>
+    </body>
+</html>
